@@ -4,30 +4,41 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+
+\definecolor{sectionblue}{RGB}{26, 82, 118}
 
 \setlength{\parindent}{0pt}
 
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=blue,
+    linkcolor=sectionblue,
+    filecolor=magenta,      
+    urlcolor=sectionblue,
 }
 
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titleformat{\section}{\large\bfseries\color{sectionblue}}{}{0em}{}[\color{sectionblue}\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
 
 \begin{document}
 
-\begin{center}
-    {\LARGE \bfseries Karcag Tamas} \\
-    \vspace{4pt}
-    Széchenyi krt. 23, 9081 Győrújbarát, Hungary \\
-    \vspace{2pt}
-    Phone: +36 30 63 90 722 | Email: \href{mailto:karcagtamas@outlook.com}{karcagtamas@outlook.com} \\
-    \vspace{2pt}
-    GitHub: \href{https://github.com/karcagtamas}{github.com/karcagtamas} | Born: July 26, 1999 (Győr)
-\end{center}
+\begin{wrapfigure}{r}{0.24\textwidth}
+    \centering
+    \vspace{-12pt} % Pull image up to align with the name
+    % Replace 'profile.jpg' with your actual image filename in your repository
+    \includegraphics[width=0.24\textwidth,height=0.28\textwidth,keepaspectratio]{Profile.jpg} 
+\end{wrapfigure}
+
+{\LARGE \bfseries \color{sectionblue} Karcag Tamas} \\ \\
+Széchenyi krt. 23, 9081 Győrújbarát, Hungary \\
+Phone: +36 30 63 90 722 \\
+Email: \href{mailto:karcagtamas@outlook.com}{karcagtamas@outlook.com} \\
+GitHub: \href{https://github.com}{://github.com} \\
+Born: July 26, 1999 (Győr)
+
+\vspace{15pt}
 
 \section{Education}
 
