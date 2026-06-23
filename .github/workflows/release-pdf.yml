@@ -19,15 +19,17 @@ jobs:
       - name: Install LaTeX environment
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra texlive-pictures texlive-lang-european
 
-      - name: Copile LaTeX to PDF
+      - name: Copile LaTeX to PDFs
         run: bash compile.sh
 
-      - name: Create GitHub Release and Upload PDF
+      - name: Create GitHub Release and Upload PDFs
         uses: softprops/action-gh-release@v2
         with:
-          files: cv.pdf
+          files: |
+            cv_en.pdf
+            cv_hu.pdf
           name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false

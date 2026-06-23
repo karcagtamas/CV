@@ -1,0 +1,145 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hungarian]{babel}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\definecolor{sectionblue}{RGB}{26, 82, 118}
+
+\setlength{\parindent}{0pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=sectionblue,
+    filecolor=magenta,      
+    urlcolor=sectionblue,
+}
+
+\titleformat{\section}{\large\bfseries\color{sectionblue}}{}{0em}{}[\color{sectionblue}\titlerule]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{\dimexpr\textwidth - 3.7cm\relax}
+    \vspace{0pt}
+    {\LARGE \bfseries \color{sectionblue} Karcag Tamás} \\ [0.4em]
+    Széchenyi krt. 23, 9081 Győrújbarát \\
+    Telefon: +36 30 63 90 722 \\
+    Email: \href{mailto:karcagtamas@outlook.com}{karcagtamas@outlook.com} \\
+    GitHub: \href{https://github.com}{github} \\
+    LinkedIn: \href{https://linkedin.com}{linkedin} \\
+    Születési idő: 1999. július 26. (Győr)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{3.5cm}
+    \vspace{0pt}
+    \centering
+    \includegraphics[width=3.5cm,height=4.2cm,keepaspectratio]{Profile.jpg} 
+\end{minipage}
+
+\vspace{10pt}
+
+\section{Tanulmányok}
+
+\textbf{Eötvös Loránd Tudományegyetem}, Budapest \hfill 2023 -- 2025 \\
+Programtervező informatikus MSc -- Szoftvertechnológia szakirány
+
+\vspace{6pt}
+\textbf{Széchenyi István Egyetem}, Győr \hfill 2019 -- 2023 \\
+Mérnökinformatikus BSc
+
+\vspace{6pt}
+\textbf{Jedlik Ányos Gépipari és Informatikai Szakgimnázium}, Győr \hfill 2018 -- 2019 \\
+Szoftverfejlesztő OKJ képzés
+
+\vspace{6pt}
+\textbf{Jedlik Ányos Gépipari és Informatikai Szakközépiskola}, Győr \hfill 2014 -- 2018 \\
+Érettségi vizsga szoftverfejlesztő szakon \& OKJ bizonyítvány
+
+\vspace{6pt}
+\textbf{II. Rákóczi Ferenc Általános Iskola}, Győrújbarát \hfill 2006 -- 2014 \\
+Általános iskolai tanulmányok
+
+\section{Szakmai Tapasztalatok}
+
+\textbf{Szoftverfejlesztő} -- HITPROSOL Kft. \hfill 2025 -- Jelenleg
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Vállalati rendszerek és webes platformok fejlesztése, karbantartása.
+    \item Hálózati infrastruktúra felügyelete és informatikai üzemeltetési feladatok ellátása.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Szoftverfejlesztő} -- GLH Consulting Bt. \hfill 2019 -- 2025
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Belső vállalati szoftvermegoldások tervezése és webes alkalmazások üzembe helyezése.
+    \item Technikai támogatás biztosítása a helyi hálózati erőforrások működtetéséhez.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Oktató} -- Logiscool Győr \hfill 2018 -- 2019
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Alapvető programozási logika, szoftveres alapelvek és digitális írástudás oktatása fiatal diákok számára.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Szoftverfejlesztő gyakornok} -- Audi Hungaria \hfill 2018
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item A mérnökcsapat napi szintű szoftverfejlesztési és asszisztensi feladatainak támogatása.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Hálózati rendszergazda gyakornok} -- Jedlik Ányos Középiskola \hfill 2017
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Az intézményi hálózati hardverek rendszeres karbantartása és üzemeltetésének támogatása.
+\end{itemize}
+
+\section{Nyelvtudás}
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item \textbf{Magyar:} Anyanyelv
+    \item \textbf{Angol:} Középfok (B2 szint)
+\end{itemize}
+
+\section{Projektek}
+\textbf{\href{https://github.com/ZephyrGraph}{Zephyr Graph}} (MSc Diplomamunka)
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Ok-okozati gráfleíró nyelv (cause-effect graph language) tervezése és megvalósítása.
+    \item Gráfkezelési modulok és logikai transzformációk fejlesztése tesztesetek automatikus generálásához.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{\href{https://github.com/Papyrus}{Papyrus}} (BSc Szakdolgozat)
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Élő, online kollaboratív szövegszerkesztő alkalmazás fejlesztése fájlkezelő funkciókkal.
+    \item Robusztus egyidejűség-kezelés megvalósítása a zökkenőmentes, valós idejű közös munka biztosítására.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{\href{https://karcags.eu:9800}{Cleopatra}}
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Komplex produktivitási alkalmazás egyetemi időszakok, kurzusok és órák kezelésére naptárral és feladatkezelő keretrendszerrel.
+    \item Egyedi szórakoztató modul beépítése filmek, sorozatok és megtekintési státuszok nyomon követésére.
+\end{itemize}
+
+\section{Technikai Ismeretek \& Keretrendszerek}
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item \textbf{Nyelvek és Ökoszisztémák:} C++, C\# (.NET Framework, .NET, WPF, WinForms, Blazor), Java (Jooby, SWT), Kotlin (Ktor), Scala.
+    \item \textbf{Webfejlesztés:} HTML/CSS/JS, SCSS, TypeScript, PHP, NodeJS, NestJS, ExpressJS, React, Angular, Vue.
+    \item \textbf{Mobilfejlesztés:} Jetpack Compose, Flutter, React Native.
+    \item \textbf{Adatbázisok:} MySQL, PostgreSQL, Oracle SQL, MongoDB, Neo4J.
+    \item \textbf{Minősítések és Hálózatok:} Cisco CCNA 1, Cisco CCNA 2, ITNA, ECDL, Hálózatüzemeltetés és hálózatkezelés.
+    \item \textbf{Egyéb:} "B" kategóriás vezetői engedély.
+\end{itemize}
+
+\section{Személyes Erősségek \& Hobbik}
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item \textbf{Személyes tulajdonságok:} Szervezettség, pontosság, vezetői vénák, kitartás. 
+    \item \textbf{Hobbik:} Társasjátékok, sportok, asztali RPG játékok, olvasás, szakmai önképzés.
+\end{itemize}
+
+\end{document}
