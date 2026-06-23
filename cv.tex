@@ -5,7 +5,6 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xcolor}
-\usepackage{wrapfig}
 \usepackage{graphicx}
 
 \definecolor{sectionblue}{RGB}{26, 82, 118}
@@ -20,90 +19,125 @@
 }
 
 \titleformat{\section}{\large\bfseries\color{sectionblue}}{}{0em}{}[\color{sectionblue}\titlerule]
-\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
 
 \begin{document}
 
-\begin{wrapfigure}{r}{0.24\textwidth}
+\noindent
+\begin{minipage}[t]{\dimexpr\textwidth - 3.7cm\relax}
+    \vspace{0pt} % Aligns top of text box with top of image box
+    {\LARGE \bfseries \color{sectionblue} Karcag Tamás} \\ [0.4em]
+    Széchenyi krt. 23, 9081 Győrújbarát, Hungary \\
+    Phone: +36 30 63 90 722 \\
+    Email: \href{mailto:karcagtamas@outlook.com}{karcagtamas@outlook.com} \\
+    GitHub: \href{https://github.com/karcagtamas}{github} \\
+    LinkedIn: \href{https://www.linkedin.com/in/karcag-tamas-2a3987197/}{linkedin} \\
+    Born: July 26, 1999 (Győr)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{3.5cm}
+    \vspace{0pt}
     \centering
-    \vspace{-12pt} % Pull image up to align with the name
-    % Replace 'profile.jpg' with your actual image filename in your repository
-    \includegraphics[width=0.24\textwidth,height=0.28\textwidth,keepaspectratio]{Profile.jpg} 
-\end{wrapfigure}
+    \includegraphics[width=3.5cm,height=4.2cm,keepaspectratio]{Profile.jpg} 
+\end{minipage}
 
-{\LARGE \bfseries \color{sectionblue} Karcag Tamas} \\ \\
-Széchenyi krt. 23, 9081 Győrújbarát, Hungary \\
-Phone: +36 30 63 90 722 \\
-Email: \href{mailto:karcagtamas@outlook.com}{karcagtamas@outlook.com} \\
-GitHub: \href{https://github.com}{://github.com} \\
-Born: July 26, 1999 (Győr)
-
-\vspace{15pt}
+\vspace{10pt}
 
 \section{Education}
 
-\textbf{Eötvös Loránd University}, Budapest \hfill 2023 -- 2025
-\\ Computer Science MSc -- Software Technology Specialization
-
-\vspace{4pt}
-\textbf{Széchenyi István University}, Győr \hfill 2019 -- 2023
-\\ Computer Science Engineering BSc
+\textbf{Eötvös Loránd University}, Budapest \hfill 2023 -- 2025 \\
+Computer Science MSc -- Software Technology Specialization
 
 \vspace{6pt}
-\textbf{Jedlik Ányos Technical and Information Technology Faculty}, Győr \hfill 2018 -- 2019
-\\ Software Development Vocational Training (OKJ)
+\textbf{Széchenyi István University}, Győr \hfill 2019 -- 2023 \\
+Computer Science Engineering BSc
 
 \vspace{6pt}
-\textbf{Jedlik Ányos Secondary Technical School}, Győr \hfill 2014 -- 2018
-\\ High School Graduation \& Software Development Vocational Certification (OKJ)
+\textbf{Jedlik Ányos Technical and Information Technology Faculty}, Győr \hfill 2018 -- 2019 \\
+Software Development Vocational Training (OKJ)
 
 \vspace{6pt}
-\textbf{II. Rákóczi Ferenc Primary School}, Győrújbarát \hfill 2006 -- 2014
-\\ Primary School Education
+\textbf{Jedlik Ányos Secondary Technical School}, Győr \hfill 2014 -- 2018 \\
+High School Graduation \& Software Development Vocational Certification (OKJ)
+
+\vspace{6pt}
+\textbf{II. Rákóczi Ferenc Primary School}, Győrújbarát \hfill 2006 -- 2014 \\
+Primary School Education
 
 \section{Experience}
 
 \textbf{Software Developer} -- HITPROSOL Kft. \hfill 2025 -- Present
-\begin{itemize}[noitemsep,topsep=2pt]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
     \item Develop and maintain enterprise application systems and web platforms.
     \item Oversee network management and IT infrastructure maintenance tasks.
 \end{itemize}
 
+\vspace{4pt}
 \textbf{Software Developer} -- GLH Consulting Bt. \hfill 2019 -- 2025
-\begin{itemize}[noitemsep,topsep=2pt]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
     \item Engineered internal enterprise software solutions and specialized web deployments.
     \item Provided technical support for localized corporate networking assets.
 \end{itemize}
 
+\vspace{4pt}
 \textbf{Instructor} -- Logiscool Győr \hfill 2018 -- 2019
-\begin{itemize}[noitemsep,topsep=2pt]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
     \item Taught basic programming logic, software principles, and IT literacy to young students.
 \end{itemize}
 
+\vspace{4pt}
 \textbf{Software Development Intern} -- Audi Hungaria \hfill 2018
-\begin{itemize}[noitemsep,topsep=2pt]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
     \item Assisted the core engineering department with day-to-day software development tasks.
 \end{itemize}
 
+\vspace{4pt}
 \textbf{Network Technician Intern} -- Jedlik Ányos Secondary School \hfill 2017
-\begin{itemize}[noitemsep,topsep=2pt]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
     \item Provided regular field maintenance and operations management for institution network hardware.
 \end{itemize}
 
 \section{Languages}
-\textbf{Hungarian:} Native Language \\
-\textbf{English:} Intermediate (B2 level)
+\begin{itemize}[leftmargin=0, label={}]
+    \item \textbf{Hungarian:} Native Language
+    \item \textbf{English:} Intermediate (B2 level)
+\end{itemize}
+
+\section{Projects}
+\textbf{\href{https://github.com/karcagtamas/ZephyrGraph}{Zephyr Graph}} (MSc Thesis)
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Designed and built a cause-effect graph language.
+    \item Implemented graph management features and logical transformations to generate test cases.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{\href{https://github.com/karcagtamas/Papyrus}{Papyrus}} (BSc Thesis)
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Developed an online, live writing application featuring comprehensive file management tools.
+    \item Engineered robust concurrent edit handling to allow seamless real-time user collaboration.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{\href{https://karcags.eu:9800}{Cleopatra}}
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=0.15in]
+    \item Built a comprehensive productivity application to manage university periods, courses, and lessons alongside a calendar and task framework.
+    \item Implemented custom entertainment tracking modules for managing movies, series, and watched status history.
+\end{itemize}
 
 \section{Technical Skills \& Frameworks}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \item \textbf{Languages \& Ecosystems:} C++, C\# (.NET Framework, .NET Core, ASP.NET, WPF, WinForms, Blazor), Java (Jooby, SWT), Scala.
-    \item \textbf{Web Development:} HTML, CSS, SCSS, JavaScript, TypeScript, PHP, NodeJS, NestJS, ExpressJS, React, Angular, Vue.
-    \item \textbf{Database Administration:} MySQL, MSSQL, Oracle SQL, Data Modeling, Normalization, DDL/DML operations, Indexing optimizations.
-    \item \textbf{Certifications \& Networking:} Cisco CCNA 1, Cisco CCNA 2, ITNA, ECDL, Network Operation and Management, Driving License (Category B).
+\begin{itemize}[leftmargin=0, label={}]
+    \item \textbf{Languages \& Ecosystems:} C++, C\# (.NET Framework, .NET, WPF, WinForms, Blazor), Java (Jooby, SWT), Kotlin (Ktor), Scala.
+    \item \textbf{Web Development:} HTML/CSS/JS, SCSS, TypeScript, PHP, NodeJS, NestJS, ExpressJS, React, Angular, Vue.
+    \item \textbf{Mobile Development:} Jetpack Compose, Flutter, React Native.
+    \item \textbf{Databases:} MySQL, PostgreSQL, Oracle SQL, MongoDB, Neo4J.
+    \item \textbf{Certifications \& Networking:} Cisco CCNA 1, Cisco CCNA 2, ITNA, ECDL, Network Operation and Management.
+    \item \textbf{Other:} Driving License (Category B).
 \end{itemize}
 
 \section{Personal Attributes \& Hobbies}
-\textbf{Personal Strengths:} Strong Organization, Precision, Leadership Qualities, Perseverance. \\
-\textbf{Hobbies:} Scale modeling, organizing community events, volunteering, professional self-education, tabletop RPG creation/playing, reading.
+\begin{itemize}[leftmargin=0, label={}]
+    \item \textbf{Personal Strengths:} Strong Organization, Precision, Leadership Qualities, Perseverance. 
+    \item \textbf{Hobbies:} Boardgames, sports, tabletop RPG, reading, professional self-education.
+\end{itemize}
 
 \end{document}
